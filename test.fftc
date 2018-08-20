@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<testCase version="7.0.0.bc91e6c">
+    <execution>
+        <parameters version="7.0.0.bc91e6c">
+            <parameters escape="true">
+                <parameters xmlns:pt="http://www.fnfr.com/schemas/parameterTree">
+                    <param1>0-2</param1>
+                </parameters>
+            </parameters>
+        </parameters>
+    </execution>
+    <procedures>
+        <item name="main">
+            <steps>
+                <item guid="502a3d3f-fb6a-4d18-89b3-b485c355a11c" action="eval">
+                    <command>
+                        <body>set armazon [lindex [split &quot;[param param1]&quot; &quot;-&quot;] 0]</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                    <useFieldsInCommand>false</useFieldsInCommand>
+                </item>
+                <item guid="a273609c-b800-45c1-b94b-38109c1787c9" action="eval">
+                    <command>
+                        <body>set slot [lindex [split &quot;[param param1]&quot; &quot;-&quot;] 1]</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                    <useFieldsInCommand>false</useFieldsInCommand>
+                </item>
+            </steps>
+        </item>
+    </procedures>
+</testCase>
