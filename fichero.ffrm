@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<ResponseMap version="7.0.0.bc91e6c">
+    <sampleDictionary>
+        <item name="sample1">
+            <action actionType="readFile">
+                <command>
+                    <body>file:/C:/Users/Cristian/Desktop/Curso_Itest%20Generico/documentacion%20curso/direcciones.csv</body>
+                </command>
+            </action>
+            <responseBody>Conexion,Direccion,Puerto,User,Password
+Telnet1,192.168.56.101,23,ats,ats
+SSH1,192.168.56.101,22,ats,ats
+Telnet2,192.168.56.101,23,ubuntu,reverse
+SSH2,192.168.56.101,22,ubuntu,reverse
+</responseBody>
+            <contentType>text</contentType>
+            <structuredData>
+&lt;structure xmlns:map=&quot;http://www.fnfr.com/svt/mapping&quot;&gt;
+    &lt;isEmpty&gt;false&lt;/isEmpty&gt;
+&lt;/structure&gt;
+</structuredData>
+            <aliases>
+                <item name="isEmpty">
+                    <queryFormatString>.//isEmpty</queryFormatString>
+                </item>
+            </aliases>
+        </item>
+    </sampleDictionary>
+    <mapperProperties>
+        <item type="com.fnfr.svt.mapping.table.TabularMapperProperties">
+            <tabularMaps>
+                <item name="tabla">
+                    <startingLineNumber>1</startingLineNumber>
+                    <banner>Conexion,Direccion,Puerto,User,Password</banner>
+                    <bannerStructure>CaseSensitive</bannerStructure>
+                    <delimiter>Comma</delimiter>
+                    <columns>
+                        <item name="Conexion">
+                            <lastFullCell></lastFullCell>
+                            <uid>f166e417-9541-4a12-8230-fc4faf261c7e</uid>
+                        </item>
+                        <item name="Direccion">
+                            <lastFullCell></lastFullCell>
+                            <uid>cf8fe458-3cde-4c59-b445-4418c30a0b77</uid>
+                        </item>
+                        <item name="Puerto">
+                            <lastFullCell></lastFullCell>
+                            <uid>e2e97173-92ca-4dcc-b51a-037d91fcbe77</uid>
+                        </item>
+                        <item name="User">
+                            <lastFullCell></lastFullCell>
+                            <uid>f571ac00-70cb-4672-85dd-4138587d5845</uid>
+                        </item>
+                        <item name="Password">
+                            <lastFullCell></lastFullCell>
+                            <uid>034cfd23-1350-4442-99a3-39b6f9fcb931</uid>
+                        </item>
+                    </columns>
+                </item>
+            </tabularMaps>
+        </item>
+    </mapperProperties>
+    <applicabilityProperties actionType="readFile" command="file:/C:/Users/Cristian/Desktop/Curso_Itest%20Generico/documentacion%20curso/direcciones.csv"/>
+</ResponseMap>
